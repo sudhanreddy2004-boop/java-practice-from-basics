@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class LeftRotation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[] arr=new int[n];
+		int temp=arr[0];
+		for(int i=1;i<arr.length;i++) {
+	        arr[i]=sc.nextInt();
+			//arr[i-1]=arr[i];
+		}
+		for(int i=1;i<arr.length;i++) {
+			//arr[i]=sc.nextInt();
+			arr[i-1]=arr[i];
+		}
+		arr[arr.length-1]=arr[0];
+	
+	  System.out.println("array after left rotation");
+	
+for(int i=0;i<arr.length;i++) {
+	System.out.print(arr[i]+" ");
+	}
+
+}
+}
